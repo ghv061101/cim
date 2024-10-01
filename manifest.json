@@ -1,0 +1,9 @@
+{
+    "name": "Chemicals Inventory Manager",
+    "short_name": "Chem Inventory",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4CAF50",
+   
+}

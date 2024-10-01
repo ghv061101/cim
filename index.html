@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemicals Inventory Manager</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <header class="custom-header">
+        <h1>Chemicals Inventory Manager</h1>
+    </header>
+    <div class="alert hide">
+        <span class="fas fa-exclamation-circle"></span>
+        <span class="msg">Warning: This is a warning alert!</span>
+    </div>
+    <div class="container my-4" id="appContainer">
+        <div class="left-text">
+            <p class="btn1">Chemical Supplies</p>
+        </div>
+        <div class="right-icons">
+            <p class="btn" id="addRow"><i class="bi bi-plus-circle"></i></p>
+            <p class="btn" id="moveRowUp"><i class="bi bi-arrow-up-circle"></i></p>
+            <p class="btn" id="moveRowDown"><i class="bi bi-arrow-down-circle"></i></p>
+            <p class="btn" id="deleteRow"><i class="bi bi-trash-fill"></i></p>
+            <p class="btn" id="refreshData"><i class="bi bi-arrow-clockwise"></i></p>
+            <p class="btn" id="saveData"><i class="bi bi-save-fill"></i></p>
+        </div>
+    </div>
+    <div class="container my-4 d-flex justify-content-center">
+        <table class="table" id="chemicalsTable">
+            <thead>
+                <tr>
+                    <th><i class="bi bi-check2"></i></th>
+                    <th></th>
+                    <th>Chemical Name</th>
+                    <th>Vendor</th>
+                    <th>
+                        <div class="header-container">
+                            Density
+                            <span class="unit-label">g/m³</span>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="header-container">
+                            Viscosity
+                            <span class="unit-label">m²/s</span>
+                        </div>
+                    </th>
+                    <th>Packaging</th>
+                    <th>Pack Size</th>
+                    <th>Unit</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
